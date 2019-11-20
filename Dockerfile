@@ -10,6 +10,7 @@ ENV PATH /opt/conda/envs/ambiente/bin:$PATH
 
 # Copiando projeto para a raíz do conteiner
 COPY aplicacao_pca.py /
+COPY breastcancerwisconsin.csv /
 
 # Create script for container startup
 COPY docker-entrypoint.sh /opt/conda/envs/ambiente/bin/
